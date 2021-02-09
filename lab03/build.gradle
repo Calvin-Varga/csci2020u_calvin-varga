@@ -1,0 +1,23 @@
+buildscript{
+    repositories{
+        flatDir dirs: 'C:\\Users\\calvi\\Desktop\\School Resources\\Year 2\\Semester 2\\Software Systems Dev and Integration\\proguard6.2.2\\proguard6.2.2\\lib'
+    }
+    dependencies{
+        classpath ':proguard:'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies{
+    implementation 'org.apache.commons:commons-csv:1.8'
+}
+
+mainClassName = "csci2020u.lab03.CSVDemo"
